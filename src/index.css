@@ -1,0 +1,143 @@
+/* General Reset */
+.row {
+    margin: 0;
+    border: 0;
+}
+
+/* Primary Theme Colors */
+.app-theme-bg{
+    background: linear-gradient(180deg, rgba(200, 255, 200, 0.525), white);
+}
+
+.app-theme-bg-reverse{
+    background: linear-gradient(180deg, white, rgba(200, 255, 200, 0.7));
+}
+
+.text-csPrimary {
+    color: #2F7A32 !important;
+    /* Rich, deep green for better contrast */
+}
+
+.text-csSecondary {
+    color: #4CAF50;
+    /* Slightly lighter green for variations */
+}
+
+.text-csAccent {
+    color: #FF6B6B;
+    /* Warm contrast for highlighting text */
+}
+
+.text-shadow {
+    text-shadow: .1rem .1rem .2rem #89c7897a;
+}
+
+/* Background Colors */
+.bg-csPrimary {
+    background-color: #C8FFC8;
+    /* Soft, elegant green for a premium feel */
+}
+
+.bg-csPrimary-lite {
+    background-color: rgba(200, 255, 200, 0.5);
+    /* Subtle light variation */
+}
+
+.bg-csAccent {
+    background-color: #FFECEC;
+    /* Light red/pinkish tone for attention */
+}
+
+/* Font Enhancements */
+.fw-semibold {
+    font-weight: 600;
+    /* Slightly bold for premium look */
+}
+
+.fw-extrabold {
+    font-weight: 800;
+    /* Extra-bold for strong emphasis */
+}
+
+/* Utility Styling */
+.rounded-lg {
+    border-radius: 12px;
+    /* Smooth rounded edges */
+}
+
+.shadow-sm {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow effect */
+}
+
+.shadow-lg {
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+    /* Stronger shadow for depth */
+}
+
+/* Button Styling */
+.btn-csPrimary {
+    background-color: #2F7A32;
+    color: #C8FFC8;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    transition: all 0.3s ease-in-out;
+    font-weight: 700;
+    &:hover {
+        background-color: #C8FFC8;
+        color: #2F7A32;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    }
+    &:active {
+        background-color: #1E5A1E;
+        color: #A3E6A3;
+        transform: scale(0.98);
+    }
+}
+
+/* Text Hover Effects */
+.text-hover:hover {
+    color: #FF6B6B;
+    transition: color 0.3s ease-in-out;
+}
+
+.text-csPrimary:hover {
+    color: #236123;
+}
+
+.text-csSecondary:hover {
+    color: #3D9143;
+}
+
+.text-csAccent:hover {
+    color: #D64545;
+}
+
+/* Text Wrapping and Truncation */
+.text-truncate-1 {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: block;
+}
+
+.text-truncate-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.text-truncate-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+footer{
+    border-top: 3px solid rgb(47, 122, 50);
+}
