@@ -1,8 +1,8 @@
-import React from 'react'
+import Subscriptions from "../Components/Subscriptions/Subscriptions"
 
 const Cart = () => {
   return (
-    <div>Cart</div>
+    <Subscriptions></Subscriptions>
   )
 }
 

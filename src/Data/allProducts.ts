@@ -4,9 +4,11 @@ import pcod from "../assets/pcodImg.png";
 import bloodPressure from "../assets/bloodpressure.png";
 import antiageingAndglow from "../assets/antiageingAndglow.webp";
 import weightLoss from "../assets/weightloss.png";
+import weightGain from "../assets/weightgain.png";
+// import weightLoss from "../assets/weightloss.png";
 
 export interface AllProductProp {
-    id: string;
+    id: number;
     image?: string;
     heading?: string;
     subType?: string;
@@ -16,8 +18,9 @@ export interface AllProductProp {
     keyPoints?: string[];
     benefits?: string[];
     targetAudience?: string;
-    duration?: string;
-    category: "newPlan" | "popularPlan";
+    duration?: number;
+    category: "newPlan" | "popularPlan"|"weightManagement";
+    subcategory ?: "weightloss" | "weightgain";
     biteAndDietDetails?: {
         overview: string;
         keyFactors: string[];
@@ -28,7 +31,7 @@ export interface AllProductProp {
 
 const allProduct: AllProductProp[] = [
     {
-        id: "plan-001",
+        id: 1,
         image: diabetes,
         heading: "Diabetes Management Plan",
         subType: "Diabetes Control & Wellness Plan",
@@ -47,7 +50,7 @@ const allProduct: AllProductProp[] = [
             "Access to exclusive recipes"
         ],
         targetAudience: "Individuals with diabetes or prediabetes",
-        duration: "4 weeks",
+        duration: 12,
         category: "newPlan",
         biteAndDietDetails: {
             overview: "Helps stabilize blood sugar and improve metabolic health.",
@@ -69,7 +72,7 @@ const allProduct: AllProductProp[] = [
         }
     },
     {
-        id: "plan-002",
+        id: 2,
         image: kneepain,
         heading: "Knee Pain Relief Plan",
         subType: "Joint & Inflammation Management Diet",
@@ -87,7 +90,7 @@ const allProduct: AllProductProp[] = [
             "Support for chronic pain relief"
         ],
         targetAudience: "People suffering from arthritis or joint pain",
-        duration: "6 weeks",
+        duration: 4,
         category: "newPlan",
         biteAndDietDetails: {
             overview: "Reduces joint pain and inflammation through targeted nutrition.",
@@ -110,7 +113,7 @@ const allProduct: AllProductProp[] = [
         }
     },
     {
-        id: "plan-003",
+        id: 3,
         image: pcod,
         heading: "PCOS Management Plan",
         subType: "PCOS Hormonal Balance Diet",
@@ -129,7 +132,7 @@ const allProduct: AllProductProp[] = [
             "Fitness and wellness strategies"
         ],
         targetAudience: "Women struggling with PCOS and hormonal imbalance",
-        duration: "8 weeks",
+        duration: 12,
         category: "newPlan",
         biteAndDietDetails: {
             overview: "Designed to help manage PCOS symptoms and hormonal balance.",
@@ -151,7 +154,7 @@ const allProduct: AllProductProp[] = [
         }
     },
     {
-        id: "plan-004",
+        id: 4,
         image: bloodPressure,
         heading: "Blood Pressure Control Plan",
         subType: "Hypertension Diet & Heart Health Plan",
@@ -170,7 +173,7 @@ const allProduct: AllProductProp[] = [
             "Regular health tracking"
         ],
         targetAudience: "Individuals with hypertension or heart disease risk",
-        duration: "5 weeks",
+        duration: 6,
         category: "popularPlan",
         biteAndDietDetails: {
             overview: "Helps manage blood pressure naturally through diet and lifestyle changes.",
@@ -192,7 +195,7 @@ const allProduct: AllProductProp[] = [
         }
     },
     {
-        id: "plan-005",
+        id: 6,
         image: antiageingAndglow,
         heading: "Skin Glow & Anti-Aging Plan",
         subType: "Nutrient-Rich Skin Rejuvenation Diet",
@@ -211,7 +214,7 @@ const allProduct: AllProductProp[] = [
             "Hydration and detox guidance"
         ],
         targetAudience: "Anyone looking for youthful and glowing skin",
-        duration: "6 weeks",
+        duration: 4,
         category: "popularPlan",
         biteAndDietDetails: {
             overview: "A diet designed to enhance skin health and slow down aging.",
@@ -231,7 +234,90 @@ const allProduct: AllProductProp[] = [
                 "Essential vitamins and minerals"
             ]
         }
+    },
+    {
+        id: 7,
+        image: weightLoss,
+        heading: "Weight Loss Plan",
+        subType: "Fat Reduction & Metabolism Boost",
+        description: "A science-backed nutrition plan to promote fat loss, enhance metabolism, and achieve a sustainable healthy weight.",
+        oldPrice: 5999,
+        newPrice: 3999,
+        keyPoints: [
+            "Boost metabolism",
+            "Promote healthy fat loss",
+            "Improve digestion & gut health",
+            "Sustainable weight management"
+        ],
+        benefits: [
+            "Personalized calorie deficit plans",
+            "Metabolism-boosting diet",
+            "Expert guidance on physical activity"
+        ],
+        targetAudience: "Individuals looking to lose weight in a healthy manner",
+        duration: 8,
+        category: "weightManagement",
+        biteAndDietDetails: {
+            overview: "Helps individuals lose weight safely while maintaining muscle mass.",
+            keyFactors: [
+                "Calorie deficit",
+                "Balanced macro intake",
+                "Active lifestyle"
+            ],
+            complications: [
+                "Slow metabolism",
+                "Nutritional deficiencies",
+                "Fatigue & low energy"
+            ],
+            approach: [
+                "Portion control & balanced meals",
+                "Increased protein intake",
+                "Sustainable eating habits"
+            ]
+        }
+    },
+    {
+        id: 8,
+        image: weightGain,
+        heading: "Weight Gain Plan",
+        subType: "Healthy Mass Gain & Strength Building",
+        description: "A high-nutrient diet designed to help individuals gain weight in a healthy and sustainable manner.",
+        oldPrice: 4999,
+        newPrice: 3499,
+        keyPoints: [
+            "Increase muscle mass",
+            "Improve strength & endurance",
+            "Boost overall energy levels",
+            "Support gut health & digestion"
+        ],
+        benefits: [
+            "Customized high-calorie meal plan",
+            "Nutrient-dense food recommendations",
+            "Guidance on strength training"
+        ],
+        targetAudience: "Individuals looking to gain weight in a healthy way",
+        duration: 8,
+        category: "weightManagement",
+        biteAndDietDetails: {
+            overview: "Designed to help individuals gain weight safely with a focus on muscle growth and overall health.",
+            keyFactors: [
+                "High-calorie diet",
+                "Adequate protein intake",
+                "Strength-building support"
+            ],
+            complications: [
+                "Low muscle mass",
+                "Underweight concerns",
+                "Fatigue & weakness"
+            ],
+            approach: [
+                "Protein-rich diet",
+                "Balanced intake of healthy fats & carbs",
+                "Regular strength training support"
+            ]
+        }
     }
+
 ];
 
 export default allProduct;

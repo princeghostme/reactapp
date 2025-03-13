@@ -11,7 +11,6 @@ interface privateRouteProps {
 const CsPrivateRoute: React.FC<privateRouteProps> = ({ roles, component }) => {
     window.scrollTo(0,0);
     if (roles && roles?.length > 0) {
-        debugger;
         const user = useSelector((state: RootState) => state.local.userToken);
         var userRoles = user?.token?.accessToken?.roles;
         const isAuthorised = userRoles?.some(x => roles.includes(x));

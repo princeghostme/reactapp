@@ -1,16 +1,18 @@
-import React from 'react'
 import CsRoute from './Routers/CsRoute'
 import Navbar from './Components/NavComp/Navbar'
 import Footer from './Components/FooterComp/Footer'
+import { HashRouter } from 'react-router-dom'
 
 const App = () => {
   return (
     <>
-          <Navbar />
-          <CsRoute />
-          <Footer />
+      <HashRouter>
+        <Navbar />
+        <CsRoute />
+        <Footer />
+      </HashRouter>
     </>
-    
+
   )
 }
 

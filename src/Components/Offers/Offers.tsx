@@ -1,11 +1,11 @@
 import "./Offers.css";
 import excitement from "../../assets/excietment.webp";
 import { BsGift, BsStars } from "react-icons/bs";
-import { FaPercent, FaRocket } from "react-icons/fa";
+import { FaRocket } from "react-icons/fa";
 
 const Offers = () => {
     return (
-        <div className="container app-theme-bg csOffers rounded-5 p-5 shadow-lg bg-light mb-5">
+        <div className="container app-theme-bg csOffers rounded-5 p-5 shadow-lg bg-light my-5">
             <div className="row align-items-center">
                 {/* Image Section */}
                 <div className="col-md-5 text-center">

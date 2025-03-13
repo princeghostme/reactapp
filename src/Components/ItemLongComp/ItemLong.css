@@ -1,39 +1,35 @@
+/* Custom styles for the card */
 .cardLongItem {
-    .card {
-        border: none;
-        box-shadow: 1.4rem 1.4rem 2.5rem rgba(186, 186, 186, 0.2);
-        transition: all 0.3s ease-in-out;
-    }
-
-    /* Image Styling */
-    .image-container {
-        height: 10rem;
-        overflow: hidden;
-        position: relative;
-        border-radius: 1rem;
-    }
-
-    .image-container img {
-        object-fit: cover;
-        object-position: center;
-        padding: 0.5rem;
-        transition: all 0.3s ease-in-out;
-    }
-
-    /* Hover Effects */
-    .card:hover {
-        transform: translateY(-10px);
-    }
-
-    .card:hover img {
-        transform: scale(1.1);
-    }
-
-    .badge {
-        font-size: 0.9rem;
-        font-weight: 600;
-        border-radius: 12px;
-        /* text-align: center; */
-        display: inline-block;
-    }
-}
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .cardLongItem:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Custom badge styles */
+  .badge.bg-csPrimary {
+    background-color: #28a745; /* Green color */
+  }
+  
+  /* Truncation for long text */
+  .text-truncate-1 {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  
+  .text-truncate-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  
+  .text-truncate-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }

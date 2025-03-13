@@ -1,5 +1,5 @@
 import './Hero.css';
-import heroMainImg from '../../assets/Diet-PNG.png';
+import heroMainImg from '../../assets/appleimg.png';
 import { FaRightLong } from 'react-icons/fa6';
 
 const Hero = () => {
@@ -15,12 +15,12 @@ const Hero = () => {
                                     Bite And Diet
                                 </h1>
                                 <p className='lead fw-semibold text-csSecondary mb-4'>
-                                    Unlock your best health with our tailored diet programs.
+                                Discover Intelligent eating and take charge of your health.
                                 </p>
                                 <ul className='list-unstyled lead'>
                                     <li className='fs-5 text-csPrimary mb-2'>All-new diet programs</li>
                                     <li className='fs-5 text-csPrimary mb-2'>Custom diet plans designed for you</li>
-                                    <li className='fs-5 text-csPrimary mb-2'>Customizable plans based on your needs</li>
+                                    <li className='fs-5 text-csPrimary mb-2'>Customizable plans based on your target</li>
                                 </ul>
                                 <button className='btn-csPrimary shadow-lg mt-4'>
                                     Get Started  <FaRightLong className='text-csPriamry' />

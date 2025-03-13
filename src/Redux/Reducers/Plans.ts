@@ -1,8 +1,8 @@
 import { createSlice } from "@reduxjs/toolkit"
-import allProduct, { allProductProp } from "../../Data/allProducts"
+import allProduct, { AllProductProp } from "../../Data/allProducts"
 
 interface initialValueProp{
-    value:allProductProp[];
+    value:AllProductProp[];
 }
 
 const initalValue:initialValueProp = {

@@ -1,8 +1,8 @@
 import { combineReducers } from "redux";
 import userTokenReducer from './Reducers/userToken';
-import plansReducer from './Reducers/Plans';
+import subscriptionReducer from './Reducers/Subscriptions';
 
 export default combineReducers({
     userToken : userTokenReducer,
-    plans : plansReducer
+    subscribtions : subscriptionReducer
 })
